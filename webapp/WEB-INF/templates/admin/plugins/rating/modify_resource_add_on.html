@@ -1,0 +1,28 @@
+<h3>
+	<a href="javascript:displayId('votes');"><img src="images/admin/skin/open_block.gif" alt="" border="0"></a>
+    <a href="javascript:hideId('votes');"><img src="images/admin/skin/closed_block.gif" alt="" border="0"></a>
+    #i18n{rating.create_resource_add_on.labelVotable}
+</h3>
+<div style="visibility:hidden; display:none;" id="votes">
+	<p>
+		<#assign checked = "" />				 	
+	    <#if accept_site_votes = 1 >
+	    	<#assign checked >checked="checked"</#assign>  
+	    </#if>
+	
+		<input class="checkbox" type="checkbox" name="accept_site_votes" id="accept_site_votes" value="1" ${checked} title="#i18n{rating.modify_resource_add_on.helpResourceVotable}"/>
+		#i18n{rating.modify_resource_add_on.labelVotable}
+		<br />
+		<#if mailinglists_list?has_content>
+			<#assign checked = "" />				 	
+	        <#if is_email_notified_vote = 1 >
+	       		<#assign checked >checked="checked"</#assign>  
+	        </#if>
+           	<input class="checkbox" type="checkbox" name="is_email_notified_vote" value="1" ${checked} title="#i18n{rating.modify_resource_add_on.helpVoteIsEmailNotified}"/>&nbsp;
+           	<@combo name="mailing_vote" default_value="${mailing_list_default_value}" items=mailinglists_list />
+            #i18n{rating.modify_resource_add_on.labelVoteIsEmailNotified}
+		<#else>
+        	<em>#i18n{rating.modify_resource_add_on.messageNotificationListNotExist}</em>
+       	</#if>
+	</p>
+</div>

@@ -1,0 +1,27 @@
+<div class="resource-vote-star-rating" style="display:none; ">
+	#i18n{rating.resource_vote.labelVote} :
+	<form name="resource_vote_form" action="jsp/site/plugins/rating/DoVote.jsp?id_resource=${resource_id}&amp;type_resource=${type_resource}"  method="post" >
+		<input class="star-rating" type="radio"  name="vote_value" value="-2"    />
+		<input class="star-rating" type="radio"  name="vote_value" value="-1" />
+		<input class="star-rating" type="radio"  name="vote_value" value="1" />
+		<input class="star-rating" type="radio"  name="vote_value" value="2"/>
+	</form>
+</div>
+<div class="resource-vote-star-rating-javascript-disable" >
+ 	<div class="star">
+		<a href="jsp/site/plugins/rating/DoVote.jsp?id_resource=${resource_id}&amp;type_resource=${type_resource}&amp;vote_value=-2" >
+		</a>
+	</div >
+	<div class="star">
+		<a href="jsp/site/plugins/rating/DoVote.jsp?id_resource=${resource_id}&amp;type_resource=${type_resource}&amp;vote_value=-1" >
+		</a>
+	</div>
+	<div class="star">
+		<a href="jsp/site/plugins/rating/DoVote.jsp?id_resource=${resource_id}&amp;type_resource=${type_resource}&amp;vote_value=1" >
+		</a>
+	</div>
+	<div class="star">
+		<a href="jsp/site/plugins/rating/DoVote.jsp?id_resource=${resource_id}&amp;type_resource=${type_resource}&amp;vote_value=2" >
+		</a>
+	</div>
+</div>

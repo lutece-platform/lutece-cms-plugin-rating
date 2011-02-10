@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="rating.resourceConfDAO"  class="fr.paris.lutece.plugins.rating.business.ResourceConfDAO" />
+	<bean id="rating.resourceStatDAO"  class="fr.paris.lutece.plugins.rating.business.ResourceStatDAO" />
+	<bean id="rating.resourceManager"  class="fr.paris.lutece.plugins.rating.web.ResourceManager" />
+	<bean id="rating.resourceDisplayManager"  class="fr.paris.lutece.plugins.rating.service.ResourceDisplayManager" />
+</beans>

@@ -17,13 +17,13 @@
 	  <repository>
 	    <id>lutece</id>
 	    <name>luteceRepository</name>
-	    <url>http://dev.lutece.paris.fr/maven_repository</url>
+	    <url>http://dev.lutece.paris.fr/maven_repository/plugin-rating</url>
 	    <layout>default</layout>
 	  </repository>
 	  <repository>
 	      <id>luteceSnapshot</id>
 	      <name>luteceSnapshot</name>
-	      <url>http://dev.lutece.paris.fr/snapshot_repository</url>
+	      <url>http://dev.lutece.paris.fr/snapshot_repository/plugin-rating</url>
 	      <snapshots>
 	          <enabled>true</enabled>
 	      </snapshots>
@@ -43,8 +43,8 @@
 		<jiraComponentId>10423</jiraComponentId>
 	</properties>
     <scm>
-        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/cms</connection>
-        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/cms</developerConnection>
-        <url>http://dev.lutece.paris.fr/viewvc/portal/trunk/plugins/cms</url>
+        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/cms/plugin-rating</connection>
+        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/cms/plugin-rating</developerConnection>
+        <url>http://dev.lutece.paris.fr/viewvc/portal/trunk/plugins/cms/plugin-rating</url>
     </scm>
 </project>

@@ -3,7 +3,7 @@
     <!-- Plugin Informations -->
     <name>rating</name>
     <class>fr.paris.lutece.portal.service.plugin.PluginDefaultImplementation</class>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <description>rating.plugin.description</description>
     <documentation/>
     <installation/>

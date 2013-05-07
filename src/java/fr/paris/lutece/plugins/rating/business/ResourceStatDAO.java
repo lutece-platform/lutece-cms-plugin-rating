@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2002-2012, Mairie de Paris
+ * Copyright (c) 2002-2013, Mairie de Paris
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -183,7 +183,7 @@ public class ResourceStatDAO implements IResourceStatDAO
      */
     public int getScore( String strResourceType, int nIdResource, Plugin plugin )
     {
-        DAOUtil daoUtil = new DAOUtil( SQL_QUERY_GET_SCORE );
+        DAOUtil daoUtil = new DAOUtil( SQL_QUERY_GET_SCORE, plugin );
 
         daoUtil.setString( 1, strResourceType );
         daoUtil.setInt( 2, nIdResource );

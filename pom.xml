@@ -1,50 +1,47 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
-	<parent>
-	  <artifactId>lutece-plugins-pom</artifactId>
-	  <groupId>fr.paris.lutece.plugins</groupId>
-	  <version>3.7</version>
-	</parent>
-
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>fr.paris.lutece.plugins</groupId>
-	<artifactId>plugin-rating</artifactId>
-	<packaging>lutece-plugin</packaging>
-	<version>1.0.4-SNAPSHOT</version>
-	<name>Lutece rating plugin</name>
-
-	<repositories>
-	  <repository>
-	    <id>lutece</id>
-	    <name>luteceRepository</name>
-	    <url>http://dev.lutece.paris.fr/maven_repository</url>
-	    <layout>default</layout>
-	  </repository>
-	  <repository>
-	      <id>luteceSnapshot</id>
-	      <name>luteceSnapshot</name>
-	      <url>http://dev.lutece.paris.fr/snapshot_repository</url>
-	      <snapshots>
-	          <enabled>true</enabled>
-	      </snapshots>
-		</repository>
-	</repositories>
- 	<dependencies>
+    <parent>
+        <artifactId>lutece-global-pom</artifactId>
+        <groupId>fr.paris.lutece.tools</groupId>
+        <version>3.0.12</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>fr.paris.lutece.plugins</groupId>
+    <artifactId>plugin-rating</artifactId>
+    <packaging>lutece-plugin</packaging>
+    <version>1.0.4-SNAPSHOT</version>
+    <name>Lutece rating plugin</name>
+    <repositories>
+        <repository>
+            <id>lutece</id>
+            <name>luteceRepository</name>
+            <url>http://dev.lutece.paris.fr/maven_repository</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>luteceSnapshot</id>
+            <name>luteceSnapshot</name>
+            <url>http://dev.lutece.paris.fr/snapshot_repository</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <dependencies>
         <dependency>
             <groupId>fr.paris.lutece.plugins</groupId>
             <artifactId>plugin-document</artifactId>
             <version>[2.2.1, 5.0.0-SNAPSHOT)</version>
             <type>lutece-plugin</type>
         </dependency>
-	</dependencies>
-   <properties>
-		<componentName>rating</componentName>
-		<jiraProjectName>RATING</jiraProjectName>
-		<jiraComponentId>10423</jiraComponentId>
-	</properties>
+    </dependencies>
+    <properties>
+        <componentName>rating</componentName>
+        <jiraProjectName>RATING</jiraProjectName>
+        <jiraComponentId>10423</jiraComponentId>
+    </properties>
     <scm>
-        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/cms/plugin-rating</connection>
-        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/cms/plugin-rating</developerConnection>
-        <url>http://dev.lutece.paris.fr/viewvc/lutece/portal/trunk/plugins/cms/plugin-rating</url>
+        <connection>scm:git:https://github.com/lutece-platform/lutece-cms-plugin-rating.git</connection>
+        <developerConnection>scm:git:https://github.com/lutece-platform/lutece-cms-plugin-rating.git</developerConnection>
+        <url>https://github.com/lutece-platform/lutece-cms-plugin-rating.git</url>
     </scm>
 </project>
